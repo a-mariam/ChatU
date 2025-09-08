@@ -3,6 +3,7 @@ import signUp from "@/components/signupcomponent";
 
 function Signup() {
     return (
-        <signUp/>
+        // <signUp/>
+        <View></View>
     )
 }

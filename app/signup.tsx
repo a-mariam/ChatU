@@ -9,54 +9,70 @@ function Signup() {
     const [email, setEmail] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
 
+    const handlePasswordChange = (input: string) => {
+        const checks  =  /^\S{4,}$/.test(input);
+        if (!checks) {
+            // set
+        }
+
+    }
+
     return (
         // <signUp/>
         <View
-            className={` bg-white gap-4  grid grid-cols-1  content-between h-full w-full px-6 py-2    `}
+            className={` bg-white grid grid-cols-1 gap-[15%]  content-between   h-full w-full px-6 py-2    `}
         >
-            <Text className={`text-[#9333ea]  `}>Back</Text>
 
             <View
-                className={` w-full h-[35%] `}
+                className={` w-full   `}
             >
+                <Text className={`text-[#9333ea]  `}>Back</Text>
+
                 <Text className={` mr-auto ml-auto text-[#9333ea] text-2xl font-bold  `}>Sign up </Text>
                 <Text className={`text-[#9333ea] `}>Get chatting with friends and family today by signing up for our chat app!</Text>
             </View>
 
             <View className={` grid gap-10  `}>
                 <TextInput
+                    autoFocus
                     placeholder="Enter your username"
                     value={username}
+                    placeholderTextColor={'#CDD1D0'}
                     onChangeText={setUsername}
-                    className={` w-full px-2  border text-[#9333ea]  rounded-md  h-fit py-4  border-[#CDD1D0] `}
+                    className={` w-full px-2  border placeholder:text-[#CDD1D0]   rounded-md  h-fit py-4  border-[#CDD1D0] `}
                 />
                 <TextInput
                     placeholder="Email"
                     secureTextEntry={true}
                     value={email}
                     onChangeText={setEmail}
-                    className={` w-full px-2  border text-[#9333ea]  rounded-md  h-fit py-4  border-[#CDD1D0] `}
-
+                    className={` w-full px-2  border placeholder:text-[#CDD1D0] ]   rounded-md  h-fit py-4  border-[#CDD1D0] `}
+                    autoFocus
+                    placeholderTextColor={'#CDD1D0'}
                 />
                 <TextInput
                     placeholder="Password"
                     secureTextEntry={true}
                     value={password}
                     onChangeText={setPassword}
-                    className={` w-full px-2  border text-[#9333ea]  rounded-md  h-fit py-4  border-[#CDD1D0] `}
+                    className={` w-full px-2  border placeholder:text-[#CDD1D0]   rounded-md  h-fit py-4  border-[#CDD1D0] `}
+                    autoFocus
+                    placeholderTextColor={'#CDD1D0'}
 
                 />
                 <TextInput
+                    autoFocus
                     placeholder="Confirm password"
                     value={confirmPassword}
+                    placeholderTextColor={'#CDD1D0'}
                     onChangeText={setConfirmPassword}
-                    className={` w-full px-2  border text-[#9333ea]  rounded-md  h-fit py-4  border-[#CDD1D0] `}
+                    className={` w-full px-2  border placeholder:text-[#CDD1D0]  rounded-md  h-fit py-4  border-[#CDD1D0] `}
                 />
             </View>
 
 
             <View
-                className={` mb-1 bg-pink-100 `}
+                className={` mb-0   `}
             >
                 <Pressable
                     className={`bg-[#9333ea] w-full h-fit  px-6 py-4 rounded-md `}

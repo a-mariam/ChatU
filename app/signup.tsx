@@ -34,32 +34,39 @@ function Signup() {
 
             <View className={` grid gap-10  `}>
                 <TextInput
+                    autoFocus
                     placeholder="Enter your username"
                     value={username}
+                    placeholderTextColor={'#CDD1D0'}
                     onChangeText={setUsername}
-                    className={` w-full px-2  border t  rounded-md  h-fit py-4  border-[#CDD1D0] `}
+                    className={` w-full px-2  border placeholder:text-[#CDD1D0]   rounded-md  h-fit py-4  border-[#CDD1D0] `}
                 />
                 <TextInput
                     placeholder="Email"
                     secureTextEntry={true}
                     value={email}
                     onChangeText={setEmail}
-                    className={` w-full px-2  border   rounded-md  h-fit py-4  border-[#CDD1D0] `}
-
+                    className={` w-full px-2  border placeholder:text-[#CDD1D0] ]   rounded-md  h-fit py-4  border-[#CDD1D0] `}
+                    autoFocus
+                    placeholderTextColor={'#CDD1D0'}
                 />
                 <TextInput
                     placeholder="Password"
                     secureTextEntry={true}
                     value={password}
                     onChangeText={setPassword}
-                    className={` w-full px-2  border ]  rounded-md  h-fit py-4  border-[#CDD1D0] `}
+                    className={` w-full px-2  border placeholder:text-[#CDD1D0]   rounded-md  h-fit py-4  border-[#CDD1D0] `}
+                    autoFocus
+                    placeholderTextColor={'#CDD1D0'}
 
                 />
                 <TextInput
+                    autoFocus
                     placeholder="Confirm password"
                     value={confirmPassword}
+                    placeholderTextColor={'#CDD1D0'}
                     onChangeText={setConfirmPassword}
-                    className={` w-full px-2  border tex  rounded-md  h-fit py-4  border-[#CDD1D0] `}
+                    className={` w-full px-2  border placeholder:text-[#CDD1D0]  rounded-md  h-fit py-4  border-[#CDD1D0] `}
                 />
             </View>
 

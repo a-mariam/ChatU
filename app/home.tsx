@@ -35,8 +35,8 @@ function Home  ()  {
         <View className={` bg-r300  w-full h-full  `}>
             <View
                 data-testid={`homeHeader`}
-                className={` grid px-6 pb-3 pt-6 border-b border-b-gray-300 w-full h-[15vh] bg-p urple-200 `}>
-                <View className={` w-full bg-re d-200 flex-row justify-between `}>
+                className={` grid px-6 pb-3 fixed pt-8 border-b border-b-gray-300 w-full h-[15vh] bg-p urple-200 `}>
+                <View className={` mb-4 w-full bg-re d-200 flex-row justify-between `}>
                     <Text className={` text-4xl font-bold text-gray-500 `} >Message</Text>
                     <Lineicons icon={MenuMeatballs1Outlined} size={38} color="#b8b9be" strokeWidth={2} />
                 </View>
@@ -48,6 +48,12 @@ function Home  ()  {
                     autoFocus
                     placeholderTextColor={'#CDD1D0'}
                 />
+            </View>
+            <View
+                data-testid={`homeBody`}
+                className={` w-full h-[85vh] bg-red-300 `}
+            >
+
             </View>
         </View>
     );

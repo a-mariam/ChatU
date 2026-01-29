@@ -3,6 +3,7 @@ import {Pressable, Text, TextInput, View} from "react-native";
 import { Home2Outlined , MenuMeatballs1Outlined} from '@lineiconshq/free-icons';
 // import { MenuMeatballs1Outlined } from '@lineiconshq/react-native-lineicons';
 import { Lineicons } from '@lineiconshq/react-native-lineicons';
+import MessageInfo from "@/reuseables/MessageInfo";
 
 function Home  ()  {
     const [searchTerm, setSearchTerm] = useState('');
@@ -44,16 +45,16 @@ function Home  ()  {
                     placeholder="Search ..."
                     value={searchTerm}
                     onChangeText={setSearchTerm}
-                    className={` w-full px-2 bg-[#f3f4f6]   placeholder:text-gray-500  rounded-xl on h-fit py-6   `}
+                    className={` w-full px-2 bg-[#f3f4f6]   placeholder:text-gray-500  rounded-xl on h-fit py-4   `}
                     autoFocus
                     placeholderTextColor={'#CDD1D0'}
                 />
             </View>
             <View
                 data-testid={`homeBody`}
-                className={` w-full h-[85vh] bg-red-300 `}
+                className={` w-full h-[85vh] bg -red-300 `}
             >
-
+                <MessageInfo id={'message1'} message={'Have you gotten home '} userName={'Ejeh'}/>
             </View>
         </View>
     );

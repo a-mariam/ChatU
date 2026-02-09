@@ -54,7 +54,7 @@ function Home  ()  {
                 data-testid={`homeBody`}
                 className={` w-full h-[85vh] bg -red-300 `}
             >
-                <MessageInfo id={'message1'} message={'Have you gotten home '} userName={'Ejeh'}/>
+                <MessageInfo id={'message1'} message={'Have you gotten home, i have something to tell you but not over the phone i need you to be there physical.So let me know when you get hom.   '} userName={'Ejeh'}/>
             </View>
         </View>
     );
